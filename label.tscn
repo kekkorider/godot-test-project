@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dcbflafd7qgrr"]
+
+[node name="Label" type="Label"]
+offset_left = -46.0
+offset_top = -39.0
+offset_right = 47.0
+offset_bottom = 39.0
+rotation = 0.0276902
+pivot_offset = Vector2(43, 9)
+text = "Yolo
+Swag
+Test test"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+uppercase = true

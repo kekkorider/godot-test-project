@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjiolcxhqoohj"]
+
+[ext_resource type="PackedScene" uid="uid://dtt7x44tf0jms" path="res://ball.tscn" id="1_2pofs"]
+[ext_resource type="PackedScene" uid="uid://253ja45cyt82" path="res://surface.tscn" id="2_j6xub"]
+
+[node name="Main" type="Node"]
+
+[node name="Ball" parent="." instance=ExtResource("1_2pofs")]
+position = Vector2(356, 0)
+
+[node name="Ball3" parent="." instance=ExtResource("1_2pofs")]
+position = Vector2(1120, 20)
+
+[node name="Ball4" parent="." instance=ExtResource("1_2pofs")]
+position = Vector2(844, 60)
+gravity_scale = 0.7
+
+[node name="Ball2" parent="." instance=ExtResource("1_2pofs")]
+position = Vector2(924, 262)
+inertia = 3.2
+freeze_mode = 1
+
+[node name="Surface2" parent="." instance=ExtResource("2_j6xub")]
+position = Vector2(380, 576)
+rotation = 2.0944
+
+[node name="Surface" parent="." instance=ExtResource("2_j6xub")]
+position = Vector2(682, 628)
+rotation = 1.52367
+
+[node name="Surface3" parent="." instance=ExtResource("2_j6xub")]
+position = Vector2(966, 576)
+rotation = 1.26885
+
+[node name="Surface4" parent="." instance=ExtResource("2_j6xub")]
+position = Vector2(1076, 388)
+rotation = 1.3045
