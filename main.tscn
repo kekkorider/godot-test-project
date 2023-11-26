@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjiolcxhqoohj"]
+[gd_scene load_steps=4 format=3 uid="uid://bjiolcxhqoohj"]
 
 [ext_resource type="PackedScene" uid="uid://dtt7x44tf0jms" path="res://ball.tscn" id="1_2pofs"]
 [ext_resource type="PackedScene" uid="uid://253ja45cyt82" path="res://surface.tscn" id="2_j6xub"]
+[ext_resource type="PackedScene" uid="uid://ngnvha3khuw5" path="res://godot_logo.tscn" id="3_yidyi"]
 
 [node name="Main" type="Node"]
 
@@ -35,3 +36,6 @@ rotation = 1.26885
 [node name="Surface4" parent="." instance=ExtResource("2_j6xub")]
 position = Vector2(1076, 388)
 rotation = 1.3045
+
+[node name="GodotLogo" parent="." instance=ExtResource("3_yidyi")]
+position = Vector2(628, 234)

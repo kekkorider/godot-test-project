@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://ngnvha3khuw5"]
+
+[ext_resource type="Texture2D" uid="uid://d3c8j42jqx75n" path="res://icon.svg" id="1_r2c0c"]
+[ext_resource type="Script" path="res://godot_logo.gd" id="2_pm3uc"]
+
+[node name="GodotLogo" type="Sprite2D"]
+texture = ExtResource("1_r2c0c")
+script = ExtResource("2_pm3uc")
