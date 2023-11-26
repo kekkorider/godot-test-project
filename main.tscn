@@ -39,3 +39,31 @@ rotation = 1.3045
 
 [node name="GodotLogo" parent="." instance=ExtResource("3_yidyi")]
 position = Vector2(628, 234)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="GodotLogo" parent="Node2D" instance=ExtResource("3_yidyi")]
+position = Vector2(225, 264)
+
+[node name="Timer" type="Timer" parent="Node2D/GodotLogo"]
+autostart = true
+
+[node name="Button" type="Button" parent="Node2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 34.0
+offset_top = 38.0
+offset_right = 322.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Click Me!
+"
+
+[connection signal="custom_toggle" from="Node2D/GodotLogo" to="GodotLogo" method="_on_godot_logo_custom_toggle"]
+[connection signal="pressed" from="Node2D/Button" to="GodotLogo" method="_on_button_pressed"]
